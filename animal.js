@@ -30,12 +30,19 @@ class Working extends Dog {
 		this.setJob("hearding");
 	
 	}
+	setName(name){
+		this.name = name;
+	}
 }
+
 class Protecting extends Dog {
 	constructor(name){
 		super(name);
 		this.setJob("guarding");
 	
+	}
+	setName(name){
+		this.name = name;
 	}
 }
 
@@ -44,21 +51,21 @@ class Companion extends Dog {
 		super(name);
 		this.setJob("being a pal");
 	}
+	setName(name){
+		this.name = name;
 }
 
 
 
-
-
-
 var Molly = new Working("Molly");
+
 Molly.speak();
 Molly.eat();
 console.log(Molly.species);
 console.log(Molly.job);
 
 
-// var Sammich = new Companion("Sammich");
+var Sammich = new Companion("Sammich");
 
 
 
@@ -67,16 +74,15 @@ console.log(Molly.job);
 
 
 
+var koala = new Animal("koala");
+var ZZ = new Dog("Harley");
 
-// var koala = new Animal("koala");
-// var ZZ = new Dog("Harley");
+koala.speak();
+koala.eat();
+console.log(koala.species);
 
-// koala.speak();
-// koala.eat();
-// console.log(koala.species);
-
-// ZZ.speak();
-// console.log(ZZ.species);
-// ZZ.eat();
+ZZ.speak();
+console.log(ZZ.species);
+ZZ.eat();
 
 
